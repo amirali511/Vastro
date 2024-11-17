@@ -12,5 +12,4 @@ pub fn planet_temperature(
 	return star_temperature * 
 				 math.pow((star_radius / (2.0 * distance_from_star)), 0.5) * 
 				 math.pow((1.0 - planet_albedo), 0.25) * atmospherical_constant
-
 }
