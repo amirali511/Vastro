@@ -1,9 +1,7 @@
 module vastro
+import math
 
-// Solar constants
-pub const solar_mass = 1.989e30 // kg
-pub const solar_radius = 6.957e8 // m
-pub const solar_apparent_magnitude = -26.74 // mag
-pub const solar_luminosity = 3.828e26 // W
-pub const solar_absolute_magnitude = 4.83 // mag
-pub const solar_temperature = 5778 // K
+// Planet temperature
+pub fn planet_temperature(distance_from_star f64, star_temperature f64, star_radius f64, planet_albedo f64) f64 {
+	return star_temperature * math.pow((star_radius / (2 * distance_from_star)), 0.5) * math.pow((1 - planet_albedo), 0.25)
+}
