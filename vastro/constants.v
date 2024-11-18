@@ -22,3 +22,9 @@ pub const planck_constant_reduced 		= 1.054571817e-34 // J s
 pub const au 												= 1.495978707e11 // m
 pub const light_year 								= 9.4607304725808e15 // m
 pub const parsec 										= 3.0856775814913673e16 // m
+
+// Earth constants
+pub const earth_mass = 5.972e24 // kg
+pub const earth_radius = 6.371e6 // m
+pub const earth_temperature = 288 // K
+pub const earth_albedo = 0.306
