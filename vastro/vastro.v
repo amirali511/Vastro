@@ -14,6 +14,7 @@ pub fn planet_temperature(
 				 math.pow((1.0 - planet_albedo), 0.25) * atmospherical_constant
 }
 
+// Time to orbit a star in seconds
 pub fn orbiting_time_in_seconds(
 	distance_from_star f64,
 	star_mass f64,
@@ -25,7 +26,8 @@ pub fn orbiting_time_in_seconds(
 				3))
 }
 
-pub fn orbiting_time_in_years(
+// Time to orbit a star in days
+pub fn orbiting_time_in_days(
 	distance_from_star f64,
 	star_mass f64,
 	planet_mass f64
