@@ -59,5 +59,5 @@ pub fn gravitational_force(
 	distance f64
 ) f64 {
 	return (vastro.gravitational_constant * first_object_mass * second_object_mass) 
-		   / math.pow(distance, 2)
+				 / math.pow(distance, 2)
 }
