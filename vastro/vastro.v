@@ -37,3 +37,17 @@ pub fn orbiting_time_in_days(
 				math.pow(distance_from_star, 
 				3)) / (60 * 60 * 24)
 }
+
+// Volume of a sphere (needed to calculate the volume of planets, stars, etc)
+pub fn sphere_volume(
+	radius f64
+) f64 {
+	return (4/3) * math.pi * math.pow(radius, 3)
+}
+
+// Surface of a sphere (needed to calculate the surface of planets, stars, etc)
+pub fn sphere_surface(
+	radius f64
+) f64 {
+	return 4 * math.pi * math.pow(radius, 2)
+}

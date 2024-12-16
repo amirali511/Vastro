@@ -8,4 +8,6 @@ fn main() {
 	
 	println(vastro.orbiting_time_in_seconds(vastro.au, vastro.solar_mass, vastro.earth_mass))
 	println(vastro.orbiting_time_in_days(vastro.au, vastro.solar_mass, vastro.earth_mass))
+	println(vastro.sphere_volume(6378000))
+	println(vastro.sphere_surface(6378000))
 }
